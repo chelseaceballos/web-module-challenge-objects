@@ -21,6 +21,7 @@ function createMenuItem(name , price, category){
     return obj;
 }
 console.log(createMenuItem('tacos', '8', 'Lunch'));
+console.log(createMenuItem('pizza', '5', 'lunch'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -32,7 +33,13 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
+function createMenuItems(name , price, category){
+  let obj = {}
+  obj = {name, price, category};
+  return obj;
+}
 
+console.log(createMenuItem('pizza', '5', 'lunch'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
@@ -52,6 +59,7 @@ export const burger = {
   price: 18, 
   category: "Lunch", 
   /*Your code here*/
+
 }
 
 
@@ -72,6 +80,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
+console.log(reviews[1]);
 
 
 
