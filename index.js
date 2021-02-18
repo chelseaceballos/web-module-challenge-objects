@@ -21,7 +21,7 @@ function createMenuItem(name , price, category){
     return obj;
 }
 console.log(createMenuItem('tacos', '8', 'Lunch'));
-console.log(createMenuItem('pizza', '5', 'lunch'));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
@@ -80,7 +80,9 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-console.log(reviews[1]);
+
+console.log(reviews[5].feedback);
+
 
 
 
@@ -114,10 +116,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, number) {
+  return `${array[number].name} gave the restaurant a ${array[number].rating} star review, and their feedback was: ${array[number].feedback}`
 }
-
+console.log(getReviewByIndex(reviews,2));
 
   
 
