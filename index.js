@@ -60,11 +60,11 @@ export const burger = {
   category: "Lunch", 
   discount: function(customer){
   if (customer === 'teacher'){
-    return (this.price * .25);
+    return (this.price * .75);
   }else if(customer === 'student'){
-    return (this.price * .25);
+    return (this.price * .75);
   } else if (customer === 'public'){
-    return (this.price * .10);
+    return (this.price * .90);
   }
 }
 }
